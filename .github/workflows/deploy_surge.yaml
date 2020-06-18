@@ -27,9 +27,9 @@ jobs:
       with: 
       node-version: 12
       
-      -name: Install Surge
-       run: npm install -g surge
-       -name: Run Surge
+      -name: Install surge
+        run:sudo npm install -g surge
+       -name: Run surge
         run: surge ./ mishi.surge.sh --token ${{secrets.SECRET_TOKEN}}
       
 
