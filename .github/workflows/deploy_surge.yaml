@@ -30,6 +30,6 @@ jobs:
       -name: Install surge
         run:sudo npm install -g surge
        -name: Run surge
-        run: surge ./ mishi.surge.sh --token ${{secrets.SECRET_TOKEN}}
+        run: surge ./ ${{secrets.SURGE_DOMAIN}} --token ${{secrets.SECRET_TOKEN}}
       
 
